@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gully Labs — Short Form Video Creator Shortlist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#1e3aff;
+    --ink:#0a0a0a;
+    --cream:#f5f1e8;
+    --paper:#ffffff;
+    --line:#0a0a0a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Space Grotesk',Arial,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased}
+  .bar{background:var(--blue);color:#fff;text-align:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:9px 12px;font-weight:500}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;background:var(--paper);border-bottom:2px solid var(--line)}
+  .wordmark{font-family:'Archivo',sans-serif;font-weight:900;font-size:30px;letter-spacing:-.02em;line-height:1}
+  .wordmark small{font-size:12px;letter-spacing:.32em;font-weight:800;display:block;margin-top:3px}
+  nav .meta{font-size:11px;letter-spacing:.22em;text-transform:uppercase;text-align:right;color:#444}
+  .hero{padding:72px 5vw 48px;border-bottom:2px solid var(--line);background:var(--paper)}
+  .kicker{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:18px}
+  h1{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(44px,9vw,110px);line-height:.94;letter-spacing:-.02em;text-transform:uppercase}
+  h1 .blue{color:var(--blue)}
+  .hero p.lede{max-width:640px;margin-top:26px;font-size:17px;line-height:1.55;color:#222}
+  .strip{display:flex;flex-wrap:wrap;border-bottom:2px solid var(--line);background:var(--ink);color:#fff}
+  .strip div{flex:1 1 220px;padding:20px 24px;border-right:1px solid #333}
+  .strip div:last-child{border-right:0}
+  .strip .lab{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#9aa4ff;font-weight:700;margin-bottom:6px}
+  .strip .val{font-size:15px;font-weight:500}
+  .section{padding:56px 5vw}
+  h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(26px,4vw,40px);text-transform:uppercase;letter-spacing:-.01em;margin-bottom:8px}
+  .sub{color:#555;font-size:14px;margin-bottom:36px;max-width:640px;line-height:1.5}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+  .card{background:var(--paper);border:2px solid var(--line);box-shadow:8px 8px 0 var(--blue);display:flex;flex-direction:column}
+  .card .top{padding:26px 26px 20px;border-bottom:2px solid var(--line);display:flex;gap:16px;align-items:center}
+  .avatar{width:64px;height:64px;flex:0 0 64px;border:2px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Archivo',sans-serif;font-weight:900;font-size:24px;background:var(--blue);color:#fff}
+  .card.alt .avatar{background:var(--ink)}
+  .card h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;line-height:1.1}
+  .card .niche{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-top:5px}
+  .card .body{padding:22px 26px;flex:1}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+  .stat{border:2px solid var(--line);padding:8px 12px;font-size:13px;font-weight:700;background:var(--cream)}
+  .stat span{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#666;font-weight:500;margin-bottom:2px}
+  .card p{font-size:14.5px;line-height:1.6;color:#222;margin-bottom:14px}
+  .links{padding:18px 26px 24px;border-top:2px solid var(--line);background:var(--cream)}
+  .links .lab{font-size:10px;letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:#666;margin-bottom:10px}
+  .links a{display:inline-block;margin:0 14px 8px 0;font-size:14px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--blue);padding-bottom:1px}
+  .links a:hover{color:var(--blue)}
+  .brand{padding:56px 5vw;background:var(--ink);color:#fff;border-top:2px solid var(--line)}
+  .brand h2{color:#fff;margin-bottom:14px}
+  .brand p{max-width:680px;font-size:15px;line-height:1.65;color:#d8d8d8}
+  footer{background:var(--paper);border-top:2px solid var(--line);padding:26px 5vw;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+  footer .wm{font-family:'Archivo',sans-serif;font-weight:900;font-size:20px}
+  footer .tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#666}
+  @media(max-width:600px){nav .meta{display:none}}
+</style>
+</head>
+<body>
+  <div class="bar">Short Form Video Creator &nbsp;·&nbsp; Candidate Shortlist</div>
+  <nav>
+    <div class="wordmark">गली<small>LABS</small></div>
+    <div class="meta">Hiring · Short Form Video Creator<br>Shortlist · October 2026</div>
+  </nav>
+
+  <header class="hero">
+    <div class="kicker">Gully Labs · New Delhi</div>
+    <h1>The<br><span class="blue">Shortlist</span></h1>
+    <p class="lede">Two creators shortlisted for Gully Labs' Short Form Video Creator role — the person who will tell the stories behind every 60-day drop: the craft of hand-lasting, the culture, the design. Not just product shots.</p>
+  </header>
+
+  <div class="strip">
+    <div><div class="lab">The Role</div><div class="val">Reels, Shorts &amp; X for Gully Labs</div></div>
+    <div><div class="lab">The Goal</div><div class="val">Engagement and views</div></div>
+    <div><div class="lab">Compensation</div><div class="val">₹20 LPA + ESOPs</div></div>
+    <div><div class="lab">The Brand</div><div class="val">Hand-lasted Indian sneakers, a new themed drop every 60 days</div></div>
+  </div>
+
+  <section class="section">
+    <h2>Shortlisted Creators</h2>
+    <p class="sub">Selected from the applications to the Gully Labs Short Form Video Creator form. Work samples are linked from each candidate's own portfolio.</p>
+    <div class="cards">
+
+      <div class="card">
+        <div class="top">
+          <div class="avatar">MF</div>
+          <div>
+            <h3>Md Faraaz Ahmed</h3>
+            <div class="niche">F1 &amp; AI Content · Creator-Operator</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="stats">
+            <div class="stat"><span>F1 Maxing</span>22K followers</div>
+            <div class="stat"><span>Scripts written &amp; shot</span>200+</div>
+            <div class="stat"><span>Lyzr AI pipeline</span>~26 videos / week</div>
+          </div>
+          <p>Faraaz built F1 Maxing and AI Maxing during GenC Cohort 1, the five-month creator program mentored by Varun Mayya. He now heads video content at Lyzr AI, running a pipeline that ships about 26 videos a week — and wants to bring that speed and playfulness to a brand that actually wants it.</p>
+          <p>He reads retention graphs before anything else — the first 3 seconds, the biggest drop — then repeats structures, not topics. His "F1 Maxing for Beginners" daily series runs on one fixed curiosity-gap format. Brand work includes a paid Treebo Hotels collab and natural Turn One merch integrations.</p>
+        </div>
+        <div class="links">
+          <div class="lab">Work Samples</div>
+          <a href="https://www.instagram.com/f1.maxing_/" target="_blank" rel="noopener">@f1.maxing_</a>
+          <a href="https://www.instagram.com/p/DTImZHQCZ27/" target="_blank" rel="noopener">Reel 1</a>
+          <a href="https://www.instagram.com/p/DXYXcUUk7d3/" target="_blank" rel="noopener">Reel 2</a>
+          <a href="https://www.instagram.com/p/DReIJbQkdsW/" target="_blank" rel="noopener">Reel 3</a>
+        </div>
+      </div>
+
+      <div class="card alt">
+        <div class="top">
+          <div class="avatar">SL</div>
+          <div>
+            <h3>Soundarya Lakshmi Narayanan</h3>
+            <div class="niche">Tech &amp; Robotics Storytelling</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="stats">
+            <div class="stat"><span>Best reel</span>132K views</div>
+            <div class="stat"><span>Retention</span>39%</div>
+            <div class="stat"><span>From one reel</span>+3,037 followers</div>
+          </div>
+          <p>Soundarya spent five years creating video content for Groww, then launched her own page — Tech with Soundu, on robotics and technology. Within the first month, one reel hit 132K views at 39% retention, drove 9,868 interactions (93.1% from non-followers) and brought in over 3,000 new followers.</p>
+          <p>She works in the garment industry, giving her firsthand exposure to apparel and manufacturing — and she wants to bring those two worlds together at Gully Labs: telling the stories behind products, the design choices, the process, and the people.</p>
+        </div>
+        <div class="links">
+          <div class="lab">Work Samples</div>
+          <a href="https://www.instagram.com/techwithsoundu/" target="_blank" rel="noopener">@techwithsoundu</a>
+          <a href="https://www.instagram.com/reel/DePT3JPJ3am/" target="_blank" rel="noopener">Reel 1</a>
+          <a href="https://www.instagram.com/reel/Deb-zrMMP5l/" target="_blank" rel="noopener">Reel 2</a>
+          <a href="https://www.instagram.com/reel/DeQ2xhHsvZp/" target="_blank" rel="noopener">Reel 3</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="brand">
+    <h2>Made by hand. Powered by belief.</h2>
+    <p>Gully Labs is a New Delhi sneaker design house making hand-lasted Indian sneakers — shaped by local streets, crafts and culture, not borrowed from the West. From a 10,000 sq. ft. space in Noida Sector-4, over 50 karigars and a young team across design, operations and content are building cultural currency: sneakers, apparel and collaborations with Nivia, Raga and Aryan Katoch. Built with the community. Shared with the community.</p>
+  </section>
+
+  <footer>
+    <div class="wm">गली LABS</div>
+    <div class="tag">Candidate shortlist · Source: Short Form Video Creator applications</div>
+  </footer>
+</body>
+</html>
